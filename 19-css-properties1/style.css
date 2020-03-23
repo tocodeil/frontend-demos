@@ -1,0 +1,27 @@
+header {
+    color: #fad02c;
+    background-color: #333652;
+    box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.75);
+    border: 0px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+}
+
+li {
+    background-image: url(https://robohash.org/1.png?set=set4);
+    background-position: 0 0;
+    background-size: 40px auto;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    line-height: 3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

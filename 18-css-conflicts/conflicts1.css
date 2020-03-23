@@ -1,0 +1,21 @@
+.gallery {
+    column-count: 4;
+}
+.gallery img {
+    border: 5px solid blue;
+    border-radius: 10px;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    filter: grayscale(1);
+    transition: all 0.5s;
+}
+
+.gallery img:hover {
+    filter: none;
+}
+
+img {
+    border: 2px solid red;
+    padding:10px;                
+}

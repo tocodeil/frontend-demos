@@ -1,0 +1,29 @@
+#motivation {
+    background: rgb(113, 201, 248);
+}
+
+#main {
+    background:#0F1821;
+    color: white;
+}
+
+.cool {
+    color: purple;
+}
+
+.error {
+    background: red;
+}
+
+.important {
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+    background: darkblue;
+    color: white;
+}

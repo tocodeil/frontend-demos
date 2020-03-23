@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox: How It Works</title>
+        <link rel="stylesheet" href="demo1.css" />
+    </head>
+    <body>
+        <h1>Flexbox: How it works</h1>
+        <ul>
+            <li>Create a container with display: flex, called a "flex container"</li>
+            <li>The flex container will arrange its children</li>
+            <li>Each child can request specific position constraints</li>
+        </ul>
+        <h2>Demo</h2>
+        <div id="demo1">
+            <div class="card">
+                <p>Hello I am the first card. I have only some text</p>
+            </div>
+            <div class="card">
+                <p>
+                    Hello I am the second card. I have some text and an image.
+                    <img src="card2.jpg" />
+                </p>
+            </div>
+            <div class="card">
+                <p>I am the third card. I can show you some code:</p>
+                <pre>
+                    <code lang="css">
+ul, li {
+    display: block;
+    list-style: none;
+}
+
+html {
+    background: #000;
+}
+
+body {
+    overflow: auto;
+    padding: 0 0 25px 0;
+    min-width: 220px;
+    border: none;
+    color: #fff;
+    font: 20px/23px "museo-sans", sans-serif;
+}
+
+p {
+    padding: 15px 15px 0 15px;
+    text-align: center;
+}
+
+abbr,
+acronym {
+    border-bottom: none;
+}                        
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </body>
+</html>

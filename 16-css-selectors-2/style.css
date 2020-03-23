@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+}
+
+tr:first-child {
+    background: darkgreen;
+    color: white;
+}
+
+th {
+    text-align: left;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 200px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 300px;
+}
+
+th, td {
+    padding: 8px 0;
+}
+
+tr:nth-child(2n) {
+    background: #f1f1f1;
+}
+
+th:first-child, td:first-child {
+    padding-left: 10px;
+}
+
+th:last-child, td:last-child {
+    padding-right: 10px;
+}
