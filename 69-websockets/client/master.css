@@ -1,0 +1,11 @@
+.page {
+    display: none;
+}
+
+.page.visible {
+    display: block;
+}
+
+.messages .public {
+    color: darkorchid;
+}

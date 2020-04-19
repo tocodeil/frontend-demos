@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript and the DOM</title>
+        <meta charset="UTF8" />
+    </head>
+    <body>
+        <p>Hello World</p>
+        <div class="large center">
+            Hello
+        </div>
+
+        <script>
+        // gets the first div element into a variable
+        let divElement = document.querySelector('div');
+
+        // prints its class list ("large", "center" in this case)
+        console.log(divElement.classList);
+        </script>
+    </body>
+</html>

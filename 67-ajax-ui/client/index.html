@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8" />
+        <title>Ajax Events Demo</title>
+        <link rel="stylesheet" href="master.css" />
+    </head>
+    <body>
+        <div id="login-page" class="page visible">
+            <form>
+                <input type="text" name="username" />
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+        <div id="messages-page" class="page">
+            <h1>
+                Messages Page
+                <button id="logout-btn">Logout</button>
+            </h1>
+            <form id="new-message-form">
+                <label>
+                    Message Text:
+                    <input type="text" name="message-text" />
+                </label>
+
+                <label>
+                    To (leave blank to make it a public message):
+                    <input type="text" name="message-to" />
+                </label>
+                <input type="submit" value="Send" />
+            </form>
+            <h2>Incoming Messages: <button id="load-messages-btn">Refresh</button></h1>
+            <ul class="messages">
+            </ul>
+        </div>
+
+        <script src="ajax_fetch.js"></script>
+        <script src="messages_ui.js"></script>
+    </body>
+</html>

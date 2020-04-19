@@ -1,0 +1,22 @@
+label {
+    position: relative;
+    height: 50px;
+    display: inline-block;
+}
+
+label .label-text {
+    position: absolute;
+    background: orange;
+    color: white;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2px;    
+}
+
+label input {
+    border: 1px solid orange;
+    height: calc(100% - 20px);
+    width: 100%;
+    box-sizing: border-box;
+}

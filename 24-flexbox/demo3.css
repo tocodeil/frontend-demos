@@ -1,0 +1,35 @@
+body { padding: 0; margin: 0; }
+.container {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+section:nth-child(1) {
+    background: lightcyan;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(2) {
+    background: black;
+    width: 50%;
+    color: rgb(136, 153, 166);
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+    background: black;
+    color: rgb(136, 153, 166);    
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(136, 153, 166);
+    margin: 5px 10px;
+}

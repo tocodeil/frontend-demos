@@ -1,0 +1,28 @@
+body {
+    padding: 0; margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background: lightcoral;
+    flex: 1;
+    max-width: 250px;
+    min-width: 150px;
+}
+
+.main {
+    flex: 3;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    margin: 10px 5px;
+}
