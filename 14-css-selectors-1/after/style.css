@@ -1,0 +1,37 @@
+/* Element Selector */
+body {
+    background: orange;
+}
+
+/* Use , to create a union of Element selectors */
+h1, h2 {
+    font-weight: normal;
+}
+
+#left {
+    background: red;
+}
+
+#right {
+    background: yellow;
+}
+
+/* form .field label { ... } */
+form a {
+    font-size: 80%;
+    color: green;
+}
+
+.highlight {
+    background: darkgreen;
+    color: white;
+}
+
+a:hover {
+    background: purple;
+    color: white;
+}
+
+.larger {
+    font-size: 150%;
+}

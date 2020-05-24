@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "h1 h1"
+    "h2 nav" 
+    "txt txt"
+    "bq bq";    
+}
+
+.title {
+    grid-area: h1;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.subhead {
+    grid-area: h2;
+}
+
+.content {
+    grid-area: txt;
+}
+
+.quote {
+    grid-area: bq;
+}
+
+@media (min-width: 900px) {
+    body {
+        grid-template-areas: 
+        "h1   h1  h1 h1"
+        "nav  h2  h2 bq" 
+        "nav  txt txt bq";    
+        grid-template-columns: 200px repeat(3, 1fr);
+    }    
+}

@@ -1,0 +1,24 @@
+html { font-size: 16px; }
+
+.em h1 { font-size: 2.35em; }
+.em h2 { font-size: 2.00em; }
+.em h3 { font-size: 1.75em; }
+.em h4 { font-size: 1.5em; }
+.em h5 { font-size: 1.25em; }
+.em h6 { font-size: 1em; }
+.em p { font-size: 1em; }
+
+.rem h1 { font-size: 2.35rem; }
+.rem h2 { font-size: 2.00rem; }
+.rem h3 { font-size: 1.75rem; }
+.rem h4 { font-size: 1.5rem; }
+.rem h5 { font-size: 1.25rem; }
+.rem h6 { font-size: 1rem; }
+.rem p { font-size: 1rem; }
+
+/** Rem vs. Em confusing bit */
+.em .inner { font-size: 1.5em; }
+.em .outer { font-size: 1.5em; }
+
+.rem .inner { font-size: 1.5rem; }
+.rem .outer { font-size: 1.5rem; }

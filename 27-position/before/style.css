@@ -1,0 +1,33 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background: crimson;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: crimson;
+    border-radius: 50px;
+}
+
+.container {
+    background-color: lightskyblue;
+    width: 600px;
+    height: 300px;
+}
+
+.container {
+}
+
+.container div {
+}
+
+.container div:nth-child(1) {
+}
+
+.container div:nth-child(2) {
+}
+
+.container div:nth-child(3) {
+}

@@ -1,0 +1,15 @@
+img {
+    /* 
+       Create cool cip paths here:
+       https://bennettfeely.com/clippy/
+    */
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    vertical-align: middle;
+}
+
+main {
+    background: cadetblue;
+    /* width: 200px; */
+    /* height: 200px; */
+    padding: 10px;
+}

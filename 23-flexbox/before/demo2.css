@@ -1,0 +1,20 @@
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    margin: 10px 5px;
+}
+
+.sidebar a {
+  color: #ECE5F0;
+}
+
+.sidebar {
+  background: #012622;
+}
+
+.main {
+  background: #ECE5F0;
+}

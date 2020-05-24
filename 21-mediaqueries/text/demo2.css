@@ -1,0 +1,30 @@
+.card {
+    background: #6b2e64;
+    color: #fffea6;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.8);
+}
+
+.card-with-image span, .card-with-image img {
+    vertical-align: middle;
+}
+
+img {
+    height: 200px;
+}
+
+@media (min-width: 950px) {
+    body {
+        margin: 0 auto;
+        width: 950px;
+    }
+    .card {
+        display: inline-block;
+        width: 30%;
+        min-width: 250px;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,31 @@
+body, html { margin: 0; padding: 0 }
+
+header {
+    background: url(https://pngimage.net/wp-content/uploads/2018/06/header-background-png-6.png);
+    padding: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: white;
+}
+
+.content {
+    padding: 10px;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: normal;
+    color: #6A4571;
+    font-size: 140%;
+}
+
+ul {
+    column-count: 2;
+    max-width: 30vw;
+}
+
+li {
+    margin: 10px;
+}
