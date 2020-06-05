@@ -17,14 +17,17 @@ img {
 
 @media (min-width: 950px) {
     body {
-        margin: 0 auto;
-        width: 950px;
+        text-align: center;
     }
+
     .card {
         display: inline-block;
         width: 30%;
-        min-width: 250px;
-        vertical-align: top;
         box-sizing: border-box;
+        vertical-align: top;
+    }
+
+    .card pre {
+        text-align: left;
     }
 }

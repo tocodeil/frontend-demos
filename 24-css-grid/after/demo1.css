@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template-areas: "h1   h1  h1 h1"
+                         "nav  h2  h2 h2" 
+                         "nav  txt txt bq";
+
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-areas: "h1"
+                             "nav"
+                             "h2"
+                             "txt"
+                             "bq";
+
+        grid-template-columns: 1fr;
+
+    }
+}
+
+h1 {
+    grid-area: h1;
+}
+
+.mainnav {
+    grid-area: nav;
+}
+
+.subhead {
+    grid-area: h2;
+}
+
+.content {
+    grid-area: txt;
+}
+
+blockquote {
+    grid-area: bq;
+}

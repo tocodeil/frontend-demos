@@ -1,0 +1,30 @@
+body {
+    background: orange;
+}
+
+h1, h2, h3, h4 { font-weight: normal; }
+
+#left-section {
+    background: darkcyan;
+}
+
+.blue {
+    color: rgb(125, 28, 134);
+}
+
+.with-border {
+    border: 2px solid rgb(99, 17, 17);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    background: black;
+    color: white;
+}
+
+#left-section li {
+
+}

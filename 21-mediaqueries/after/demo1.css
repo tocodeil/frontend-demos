@@ -1,0 +1,17 @@
+@media (min-width: 600px) {
+    body {
+        background: pink;
+    }
+}
+
+@media (min-width: 700px) {
+    p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 900px) {
+    img {
+        border: 2px solid blue;
+    }
+}

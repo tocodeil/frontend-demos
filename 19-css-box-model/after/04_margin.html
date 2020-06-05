@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Box Model</title>
+        <style>
+            b { font-size: 24px; }
+            p { background: cyan; }
+            p:first-child {
+                height: 300px;
+                width: 300px;
+            }
+            p:nth-child(2) {
+              padding: 10px 5px 5px 10px;
+              border: 5px dashed pink;
+              margin-top: 50px;
+              /* Or - margin: top right bottom left */
+              /* Or - margin: top/bottom right/left */
+              /* Or - margin: 5px (all four sides) */
+            }
+        </style>
+    </head>
+    <head>
+        <p>
+            A <b>paragraph</b> is a block element
+        </p>
+        <p>
+            A <b>paragraph</b> is a block element
+        </p>
+    </head>
+</html>
+
+
+

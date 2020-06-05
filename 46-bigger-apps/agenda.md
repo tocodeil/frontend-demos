@@ -2,6 +2,7 @@
 
 1. JavaScript Only Web Pages
   - ynet.co.il, rest.co.il vs. Google Docs
+  Web Applications
 
 2. Single Page Applications
   - twitter.com/explore

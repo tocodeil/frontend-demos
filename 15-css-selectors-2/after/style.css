@@ -1,0 +1,28 @@
+th {
+    text-align: left;
+}
+
+tr:first-child {
+    background: darkgreen;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th:first-child, td:first-child {
+    width: 200px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 300px;
+}
+
+th, td {
+    padding: 8px 0;
+}
+
+tr:nth-child(2n) {
+    background: #f1f1f1;
+}

@@ -1,0 +1,27 @@
+body {
+    background: rgb(134, 31, 126);
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+}
+
+h2 { font-size: 20px; }
+
+h3 { font-size: 18px; }
+
+li {
+    background-image: url(https://robohash.org/1.png?set=set4);
+    background-position: 0 0;
+    background-size: 40px auto;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    line-height: 3;
+}
+
+h1 {
+    box-shadow: -8px 6px 5px 0px rgba(99,75,99,1);
+    border-radius: 124px 76px 16px 76px;
+    border: 2px solid #000000;
+}
