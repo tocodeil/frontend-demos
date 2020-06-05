@@ -4,24 +4,21 @@ const pages = {
   login: document.querySelector('#login-page'),
   messages: document.querySelector('#messages-page'),
 };
-service.onAuthenticated = showMessagesPage;
 
-loginForm.addEventListener('submit', function(evt) {
+loginForm.addEventListener('submit', async function(evt) {
   evt.preventDefault();
   const form = evt.target;
   const inputUsername = form.querySelector('input[name="username"]');
   const username = inputUsername.value;
 
   if (username.length > 0) {
-    service.login(username);
+    await service.login(username);
+    pages.login.classList.remove('visible');
+    pages.messages.classList.add('visible');
+    const messages = await service.loadMessages();
+    renderMessages(messages);
   }
 });
-
-function showMessagesPage() {
-  pages.login.classList.remove('visible');
-  pages.messages.classList.add('visible');
-  service.loadMessages();
-}
 
 function renderMessages(messagesArray) {
   const ul = pages.messages.querySelector('.timeline');
@@ -44,11 +41,12 @@ function renderMessages(messagesArray) {
   }
 }
 
-service.onHasNewMessages = renderMessages;
+async function refreshMessages() {
+  const messages = await service.loadMessages();
+  renderMessages(messages);
+}
 
-document.querySelector('#load-messages-btn').addEventListener('click', function() {
-  service.loadMessages();
-});
+document.querySelector('#load-messages-btn').addEventListener('click', refreshMessages);
 
 document.querySelector('#new-message-form').addEventListener('submit', function(evt) {
   evt.preventDefault();
@@ -65,6 +63,7 @@ document.querySelector('#new-message-form').addEventListener('submit', function(
   service.sendMessage(text, to.length > 0 ? to : null);
   inputText.value = '';
   inputTo.value = '';
+  refreshMessages();
 });
 
 document.querySelector('#logout-btn').addEventListener('click', function() {
