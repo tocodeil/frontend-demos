@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8" />
+        <title>Ajax Events Demo</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="master.css" />
+        
+    </head>
+    <body>
+      <div id="login-page" class="page visible">
+
+        <div class="sidenav">
+          <div class="login-main-text">
+            <h2>My Messages</h2>
+            <p>Login from here to access your messages</p>
+          </div>
+        </div>
+        <div class="main">
+          <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+              <form>
+                <div class="form-group">
+                  <label>User Name</label>
+                  <input type="text" name="username" class="form-control" placeholder="User Name">
+                </div>
+                <button type="submit" class="btn btn-black">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="messages-page" class="page container">
+        <h1>
+          Messages Page
+          <button id="logout-btn" class="btn btn-danger btn-sm">Logout</button>
+        </h1>
+        <div class="page-content">
+          <div class="left container mt-5 mb-5">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Send Message</h4>
+                <form id="new-message-form">
+                  <div class="form-group">
+                    <label for="msg-text" >Message Text:</label>
+                    <input type="text" id="msg-text" name="message-text" class="form-control" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="msg-to">To (leave blank to make it a public message):</label>
+                    <input type="text" id="msg-to" name="message-to" class="form-control" />
+                  </div>
+
+                  <input type="submit" value="Send" class="btn btn-primary" />
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="right container mt-5 mb-5">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Incoming Messages <button id="load-messages-btn" class="btn btn-secondary" >Refresh</button></h4>
+                <ul class="timeline">
+
+                </ul>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>
+
+      <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+
+        <script src="ajax_fetch.js"></script>
+        <script src="messages_ui.js"></script>
+    </body>
+</html>

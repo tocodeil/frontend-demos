@@ -17,6 +17,6 @@
     });
     
     cancelIntervalDemo.addEventListener('click', function() {
-        clearTimeout(timerId);
+        clearInterval(timerId);
     });    
 }());
