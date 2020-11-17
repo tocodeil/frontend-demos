@@ -65,7 +65,15 @@ app.get('/messages', verifyUser, function(req, res) {
 });
 
 const http = require('http').createServer(app);
-const io = require('socket.io')(http);
+const socketioOptions = {
+  cors: {
+    origin: "*",
+    allowedHeaders: "*",
+    methods: ["GET", "POST"]
+  }
+};
+
+const io = require('socket.io')(http, socketioOptions);
 io.on('connection', function(socket){
     console.log('a user connected');
     socket.on('listen', function(msg) {
